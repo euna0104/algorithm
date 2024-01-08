@@ -12,4 +12,4 @@ while money < 100:
     money += after
     month += 1
     
-return month
+print(month) # 출력인 것 잘 보기
