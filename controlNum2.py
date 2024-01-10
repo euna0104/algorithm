@@ -1,5 +1,16 @@
-def solution(numLog): # numLog는 배열
-    result = 'w'
-    for i in result:
-        if i == "w":
-            result.append
+def solution(numLog):
+    result = ''
+    for i in range (1, len(numLog)):
+        if numLog[i]- numLog[i-1] == 1:
+            result += 'w'
+        elif numLog[i]- numLog[i-1] == -1:
+            result += 's'
+        elif numLog[i]- numLog[i-1] == 10:
+            result += 'd'
+        elif numLog[i]- numLog[i-1] == -10:
+            result += 'a'
+    return result        
+        
+'''
+
+'''
