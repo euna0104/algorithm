@@ -16,4 +16,4 @@ def solution(date1, date2):
                 return 0
         else:
             return 0
-        
+         
