@@ -1,10 +1,11 @@
 def solution(strArr):
-    numbers = []
-    for i in strArr:
-        numbers.append(len(i))
-    hi = (max(set(numbers), key = numbers.count))
-    return hi
-        
-'''
-가장 큰 max값이 출력이 안되는 문제
-'''
+    answer = [len(i) for i in strArr]
+    tmp = []
+    for i in set(answer):
+        tmp.append(answer.count(i))
+    return max(tmp)
+  
+  '''
+  set으로 answer 리스트에서 중복된 요소 삭제하기.
+  '''
+  
