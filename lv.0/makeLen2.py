@@ -1,13 +1,7 @@
 def solution(arr):
-    if len(arr) == 2:
-        return arr
-    elif len(arr) % 4 == 0:
-        return arr
-    else:
-        for i in range(len(arr) - (len(arr)//2)-1):  # 정수 나눗셈으로 변경합니다.
-            arr.append(0)
-        return arr
-
-'''
-예외처리는 하였으나 테스트케이스를 통과 못한 구간이 있다.
-'''
+    count = 0
+    length = len(arr)
+    while length > 1:
+        length = length / 2 #3
+        count += 1 #3
+    return arr + [0] * (2 ** count - len(arr))  #8-6=2 0을 2벚 추가
