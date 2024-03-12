@@ -1,10 +1,12 @@
 def solution(numbers):
-    #numbers.replace('one','1')
-    #return numbers
-    if 'one' in numbers:
-        numbers.replace('one','1')
-    return numbers
-                    
+    nums = [
+        "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"
+    ]
+    
+    for i, v in enumerate(nums):
+        numbers = numbers.replace(v, str(i))
+    return int(numbers)
+  
 '''
-replace가 되지 않는 문제 발생
+튜플로 접근해야함을 깨닳았다.
 '''
